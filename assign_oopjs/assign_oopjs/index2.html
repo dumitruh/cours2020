@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculul laturilor cubului</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        function Cube(a) {
+            this.latura = a;
+            this.volume = function() {
+                return this.latura * this.latura * this.latura;
+            }
+            this.total = function() {
+                return 12 * this.latura;
+            }
+        }
+        var cube1 = new Cube(5);
+        var cube2 = new Cube(6);
+        alert("Cub1 : volumul " + cube1.volume() + " suma tuturor lungimilor laturilor " + cube1.total());
+        alert("Cub2 : volumul " + cube2.volume() + " suma tuturor lungimilor laturilor " + cube2.total());
+    </script>
+</body>
+
+</html>
